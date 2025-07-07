@@ -2,9 +2,7 @@ package main.Ejercicio_02_invert;
 
 import main.Materia.Models.Node;
 
-/**
- * Clase que invierte un Árbol Binario, intercambiando subárboles izquierdo y derecho.
- */
+
 public class InvertBinaryTree {
 
     /**
@@ -14,11 +12,8 @@ public class InvertBinaryTree {
      * @return el árbol binario invertido
      */
     public Node invertTree(Node root) {
-        if (root == null) return null;
-
-        Node temp = root.getLeft();
-        root.setLeft(invertTree(root.getRight()));
-        root.setRight(invertTree(temp));
+        if (root == null) return null;Node temp = root.getLeft();
+        root.setLeft(invertTree(root.getRight()));root.setRight(invertTree(temp));
 
         return root;
     }

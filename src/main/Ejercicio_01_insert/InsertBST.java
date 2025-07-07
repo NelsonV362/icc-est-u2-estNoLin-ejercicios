@@ -13,15 +13,14 @@ public class InsertBST {
      */
     public Node insert(Node root, int value) {
         if (root == null) {
-            return new Node(value);
-        }
+            return new Node(value);}
 
-        if (value < root.getValue()) {
-            root.setLeft(insert(root.getLeft(), value));
+        if (value < root.getValue()) {   root.setLeft(insert(root.getLeft(), value));
         } else {
             root.setRight(insert(root.getRight(), value));
         }
 
-        return root;
+        return 
+        root;
     }
 }

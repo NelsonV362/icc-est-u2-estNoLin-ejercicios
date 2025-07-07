@@ -3,9 +3,6 @@ package main.Ejercicio_03_listLeves;
 import main.Materia.Models.Node;
 import java.util.*;
 
-/**
- * Clase para listar los niveles de un árbol binario como listas enlazadas.
- */
 public class ListLevels {
 
     /**
@@ -16,12 +13,8 @@ public class ListLevels {
      */
     public List<List<Node>> listLevels(Node root) {
         List<List<Node>> result = new ArrayList<>();
-        if (root == null) return result;
-
-        Queue<Node> queue = new LinkedList<>();
-        queue.offer(root);
-
-        while (!queue.isEmpty()) {
+        if (root == null) return result; Queue<Node> queue = new LinkedList<>();
+        queue.offer(root);while (!queue.isEmpty()) {
             int levelSize = queue.size();
             List<Node> level = new ArrayList<>();
 
@@ -32,7 +25,9 @@ public class ListLevels {
                 if (current.getRight() != null) queue.offer(current.getRight());
             }
 
-            result.add(level);
+
+            result.
+            add(level);
         }
 
         return result;

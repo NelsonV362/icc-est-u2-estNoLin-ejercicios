@@ -185,3 +185,63 @@ Para contribuir a este proyecto, por favor crea un fork y envía una solicitud d
 
 - [PABLO TORRES] - Desarrollo inicial
 
+##  Informe sobre Ejercicios de Arboles Binarios
+
+Nombre: Nelson Matias Villalta Vasquez
+Curso:(A) ESTRUCTURA DE DATOS GRUPO - 2 - COMPUTACIÓN - CUE
+Fecha: 06/07/2025
+
+
+##  Introducion
+En este informe se analizaran y describiran 4 ejercicios relacionados directamente con arboles binarios, con estructura fundamental ne la informatica y la programacion. Los ejercicios incluyen la insercion de nodos en un arbol binario de busqueda, la inversion o la reversa de un arbol binario, la obtencion de los nodos por niveles en las respectivas listas y el calculo de la profundidad maxima que posee uno de los arboles.
+
+##  Ejercicio 01: Insercion en Arbol binario de busqueda
+
+Se implemento un algoritmo para insertar nodos en un arbol BST. Este tipo de arbol mantiene la propiedad de que para cada nodo, todos los valores en el subarbol izquierdo son menores y todos los del subarbol derecho son mayores o iguales.
+
+##  Funcionamiento
+El metodo recibe la raiz del arbol y un valor para su respectiva insercion.
+*Si la raiz es null, este crea un nuevo nodo con el valor.
+*Si el valor a insertar es menor que el valor de la raiz, se inserta recursivamente en el subarbol izquierdo.
+*Si es lo contrario, se coloca en el subarbol derecho.
+
+![Ejercicio 01](Ejercicio01.png)
+
+##  Ejercicio 02: Invertir un Arbol Binario
+
+En este ejercicio se invierte un arbol binario, generando su contraparte invertida. Cambiando los nodos izquierdos por los derechos.
+
+##  Funcionamiento
+El metodo recibe la raiz y si no es de valor null, esta intercambia los subarboles izquierdo y derecho-
+
+![Ejercicio 02](Ejercicio02.png)
+
+## Ejercicio 03:  Listar Niveles en listas enlzadas
+
+Se crea una lista en donde cada sublita contiene los nodos en el mismo nivel del arbol.
+
+##  Funcionamiento
+
+Se usa una cola para poder recorrer el arbol por niveles. Para cada nivel, se le añade la lista de nodos a la lista principal.
+
+![Ejercicio 03](Ejercicio03.png)
+
+##  Ejercicio 04: Calcular la Profundidad Maxima
+
+Calcula la profundidad maxima/total de un arbol, comprendida como la longitud del camino mas largo desde la raiz origen hasta una hoja.
+
+##  Funcionamiento
+
+Recursivamente se encarga de calcular la profundidad del subarbol izquierdo y derecho y luego devuelve el mayor valor mas 1
+
+![Ejercicio 04](Ejercicio04.png)
+
+##  Conclusiones
+
+Los arboles binarios son estructuras de datos verstiles y variados muy fundamentales en la programacion.
+
+La insercion en un tipo BST contiene orden y permite busquedas eficientes.
+
+Listar los nodos por niveles ayuda a recorrer el arbol de forma ordenada y es base para muchos algoritmos.
+
+Calcular la profundidad maxima permite un conocimiento acerca de la altura o el tamaño total del aarbol, importante para analizar su balance y eficiencia.
